@@ -2,12 +2,10 @@
 
 A fully-functional robotic arm powered by Arduino UNO, featuring both hardware control and desktop software for precise manipulation.
 
-![Robotic Arm](https://via.placeholder.com/800x400?text=Arduino+Robotic+Arm)
-
 ## Video Demonstration
 
 A video demonstration of the robotic arm in action is available in the project root:
-[Watch Video Demo](../VID-20210805-WA0000.mp4)
+[Watch Video Demo](VID-20210805-WA0000.mp4)
 
 ## Overview
 
