@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <GridLayout
+        android:id="@+id/grid_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/grid_layout_2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7">
+
+
+        <ImageView
+            android:id="@+id/button_up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:contentDescription="up arrow button"
+            android:src="@drawable/ic_button_up" />
+
+        <ImageView
+            android:id="@+id/button_left"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:contentDescription="left arrow button"
+            android:src="@drawable/ic_button_left" />
+
+        <ImageView
+            android:id="@+id/button_right"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:contentDescription="right arrow button"
+            android:src="@drawable/ic_button_right" />
+
+        <ImageView
+            android:id="@+id/button_down"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:contentDescription="down arrow button"
+            android:src="@drawable/ic_button_down" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/grid_layout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/grid_layout_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7">
+
+        <ImageView
+            android:id="@+id/triangle_button"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:contentDescription="triangle button"
+            android:src="@drawable/triangle_button" />
+
+        <ImageView
+            android:id="@+id/square_button"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:contentDescription="sqaure button"
+            android:src="@drawable/square_button"
+            app:layout_constraintEnd_toStartOf="@+id/button_right" />
+
+        <ImageView
+            android:id="@+id/circle_button"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:contentDescription="circle button"
+            android:src="@drawable/circle_button" />
+
+        <ImageView
+            android:id="@+id/cross_button"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:contentDescription="cross button"
+            android:src="@drawable/cross_button" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/grid_layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:columnCount="3"
+
+        android:rowCount="1"
+        app:layout_constraintBottom_toTopOf="@+id/grid_layout_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22000003">
+
+        <ImageView
+            android:id="@+id/l_button"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:src="@drawable/l_button" />
+
+        <ImageView
+            android:id="@+id/r_button"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:src="@drawable/r_button" />
+
+        <ImageView
+            android:id="@+id/connect_button"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/plug_out" />
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
