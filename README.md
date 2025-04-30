@@ -5,11 +5,16 @@ A fully-functional robotic arm powered by Arduino UNO, featuring both hardware c
 ## Video Demonstration
 
 A video demonstration of the robotic arm in action is available in the project root:
-[Watch Video Demo](VID-20210805-WA0000.mp4)
+
+[![Watch the demonstration video](https://img.youtube.com/vi/qlIhF5EQ3D0/hqdefault.jpg)](https://youtube.com/shorts/qlIhF5EQ3D0?feature=share)
+
+[Watch the demonstration video on YouTube](https://youtube.com/shorts/qlIhF5EQ3D0?feature=share)
+
+
 
 ## Overview
 
-This project implements a 6-DOF (Degrees of Freedom) robotic arm controlled by an Arduino UNO microcontroller. The arm consists of 5 servo motors that control different joints: base, shoulder, elbow, wrist, gripper. The system can be operated in three ways:
+This project implements a 5-DOF (Degrees of Freedom) robotic arm controlled by an Arduino UNO microcontroller. The arm consists of 5 servo motors that control different joints: base, shoulder, elbow, wrist, gripper. The system can be operated in three ways:
 - Manual control using potentiometers
 - Computer control via a desktop application
 - Bluetooth control via a mobile app
@@ -25,8 +30,8 @@ This project implements a 6-DOF (Degrees of Freedom) robotic arm controlled by a
 ## Hardware Components
 
 - Arduino UNO
-- 6× Servo Motors
-- 6× Potentiometers
+- 5× Servo Motors
+- 5× Potentiometers
 - SSD1306 OLED Display (128×64)
 - Jumper Wires
 - Power Supply
